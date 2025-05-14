@@ -1,0 +1,86 @@
+.about-us{
+    margin-bottom: 140px;
+}
+.about-us__row {
+    display: flex;
+    gap: 115px;
+}
+
+.about-us__body {
+    display: flex;
+    flex: 1 1 auto;
+    padding: 28px 0;
+    flex-direction: column;
+    gap: 40px;
+}
+.about-us__description {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.about-us__title{
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 40px;
+    color: #244D4D;
+}
+
+.about-us__text {
+    font-size: 20px;
+    line-height: 25px;
+    font-weight: 300;
+    font-family: "DM Sans", sans-serif;
+    color: #383738;
+}
+
+.about-us__benefits { 
+    line-height: 26px;
+}
+.about-us__list {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.text-list {
+    font-weight: 700;
+    font-family: "DM Sans", sans-serif;
+    font-size: 24px;
+    color: #244D4D;
+} 
+
+.list__image {
+    height: 50px;
+    width: 50px;
+    
+}
+.list__image img {
+    height: 100%;
+    width: 100%;
+    
+}
+.list__item {
+    display: flex;
+    gap: 20px;
+    
+}
+.list__body {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+ 
+
+.p-list {
+    font-size: 18px;
+    max-width: 307px;
+    font-weight: 300;
+
+}
+.about-us__image{
+    flex: 0 0 596px;
+}
+
+.about-us__image img{
+   max-width: 100%;
+}

@@ -1,0 +1,35 @@
+.header {
+    padding: 43px 120px 30px 120px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    background: white;
+}
+
+.navigation {
+    display: flex;
+}
+
+.navigation__list {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    align-self: center;
+    
+}
+.logo{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    color: #244D4D;
+ }
+
+.action-buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 35px;
+ }
+ .action-buttons__icon {
+    width: 24px;
+    height: 24px;
+ }
