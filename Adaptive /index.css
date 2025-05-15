@@ -89,11 +89,6 @@ body {
     gap: 132px;
 }
 
-@media (max-width: 479px) {
-    .header__container {
-        min-height: 70px;
-    }
-}
 
 .header__logo {
     font-size: 24px;
@@ -117,6 +112,7 @@ body {
 @media (max-width: 479px) {
     .header__container {
         gap: 20px;
+        min-height: 70px;
     }
 }
 
@@ -515,8 +511,6 @@ body {
     flex-direction: column;
     /* justify-content: space-between; */
     /* background-color: #fff; */
-    
-
 }
 .item-box {
     display: flex;
@@ -797,10 +791,9 @@ height / width of container * 100 = 442/1046*100=42,25% */
     max-width: 266px;
 }
 .subscribe__form {
-    
+    display: flex;
     flex-shrink: 1;
     flex-basis: 50%;
-    display: flex;
     align-items: center;
     font-weight: 400;
     line-height: 200%;

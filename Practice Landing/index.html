@@ -1,289 +1,540 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="products.css">
     <link rel="stylesheet" href="subscribe.css">
     <link rel="stylesheet" href="review.css">
-    <link rel="stylesheet" href="allFurniture.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="furniture.css">
     <link rel="stylesheet" href="about-us.css">
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="header.css">
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="intro.css">
     <link rel="stylesheet" href="companies.css">
-
+    <link href="https://fonts.googleapis.com/css?family=DM+Sans:300,regular,500,600,700," rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:regular,500,600,700" rel="stylesheet" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Practice Landing Page</title>
 </head>
 <body>
-   <header class="header container">
-    <div class="logo">DudeShape</div>
-    <nav class="navigation">
-        <ul class="navigation__list">
-            <li>Home</li>
-            <li>About</li>
-            <li>Features</li>
-            <li>Contact</li>
-        </ul>
-    </nav>
-    <div class="action-buttons">
-        <img class="action-buttons__icon" src="./LP img/loupe 1.svg" alt="">
-        <img class="action-buttons__icon" src="./LP img/menu 1.svg" alt="">
-    </div>
-   </header> 
-   <section class="intro container">
-    <div class="intro__title-block">
-        <div class="intro__title">We Help You Make Modern Furniture</div>
-        <div class="intro__subtitle">We will help you to make an elegant and luxurious interior designed by professional interior designer.</div>
-
-    </div>
-    <div class="intro__image-container">
-        <img src="./LP img/about-us/decoration-room.png" alt="" class="intro__image">
-    </div>
-   </section>
-   <section class="companies container">
-    <div class="companies__title">Trusted by 20,000+ companies</div>
-    <div class="companies__icons">
-        <img src="./LP img/companies/mastercard.svg" alt="">
-        <img src="./LP img/companies/airbnb.svg" alt="">
-        <img src="./LP img/companies/uber.svg" alt="">
-        <img src="./LP img/companies/paypal.svg" alt="">
-        <img src="./LP img/companies/visa.svg" alt="">
-        <img src="./LP img/companies/stripe.svg" alt="">
-    </div>
-   </section>
-   <section class="about-us container">
-    <div class="about-us__row">
-        <div class="about-us__body">
-            <div class="about-us__description">
-                <div class="about-us__title">About Us</div>
-                <div class="about-us__text">All of our furniture uses the best materials and choices for our customers. All of our furniture uses the best materials </div>
-            </div>
-            <div class="about-us__benefits">
-                <ul class="about-us__list list">
-                    <li class="list__item">
-                        <div class="list__image">
-                            <img src="../icon/surface1.svg" alt="">
-                        </div>
-                        <div class="list__body">
-                            <h4 class="text-list">Best Quality</h4>
-                            <p class="p-list">All of our furniture uses the best materials and choices</p>
-                        </div>
-                    </li>
-                    <li class="list__item">
-                        <div class="list__image">
-                            <img src="../icon/guarantee 1.svg" alt="">
-                        </div>
-                        <div class="list__body">
-                            <h4 class="text-list">Safe Shipping</h4>
-                            <p class="p-list">All of our furniture uses the best materials and choices</p>
-                        </div>
-                    </li>
-                    <li class="list__item">
-                        <div class="list__image">
-                            <img src="../icon/free-delivery 1.svg" alt="">
-                        </div>
-                        <div class="list__body">
-                            <h4 class="text-list">Fast Shipping</h4>
-                            <p class="p-list">All of our furniture uses the best materials and choices</p>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <div class="about-us__image">
-            <img src="./LP img/furniture/about3.png" alt="">
-        </div>
-    </div>
-   </section>
-   <section class="products container">
-    <div class="products__box">
-        <div class="products__header">
-            <div class="products__title">Our Popular Furniture</div>
-            <div class="products__text">All of our furniture uses the best materials and choices for our customers. All of our furniture uses the best materials and choices for our customers.</div>
-        </div>
-        <div class="products__body">
-            <div class="products__item">
-                <div class="products__image">
-                    <img src="./LP img/furniture/1.png" alt="">
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__container _container">
+                <a href="" class="logo">DudeShape</a> 
+                <nav class="navigation">
+                    <ul class="navigation__list">
+                        <li class="navigation__item">
+                            <a href="" class="navigation__link">Home</a>
+                        </li>
+                        <li class="navigation__item">
+                            <a href="" class="navigation__link">About</a>
+                        </li>
+                        <li class="navigation__item">
+                            <a href="" class="navigation__link">Features</a>
+                        </li>
+                        <li class="navigation__item">
+                            <a href="" class="navigation__link">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="action-buttons">
+                    <img class="action-buttons__icon" src="./LP img/loupe 1.svg" alt="">
+                    <img class="action-buttons__icon" src="./LP img/menu 1.svg" alt="">
                 </div>
-                <div class="products__bottom">
-                    <div class="products__first-row">
-                        <div class="products__name">Brown Swan Chair</div>
-                        <div class="products__icon">
-                            <button class="icon__favourite-btn--active">
-                                <img src="../icon/heartWhitesvg.svg" alt="">
+            </div>
+        </header> 
+        <main class="page">
+            <section class="page__intro intro">
+                <div class="intro__container _container">
+                    <div class="intro__body">
+                        <div class="intro__title-block">
+                            <div class="intro__title">We Help You Make Modern Furniture</div>
+                            <div class="intro__subtitle">We will help you to make an elegant and luxurious interior designed by professional interior designer.</div>
+                        </div>
+                        <div class="intro__image-container">
+                            <img src="./LP img/intro01.jpg" alt="" class="intro__image">
+                        </div>
+                    </div>
+                </div> 
+            </section>
+            <section class="page__companies companies">
+                <div class="companies__container _container">
+                    <div class="companies__title">Trusted by 20,000+ companies</div>
+                    <div class="companies__icons">
+                        <div class="companies__icon">
+                            <img src="./LP img/companies/mastercard.svg" alt="">
+                        </div>
+                        <div class="companies__icon">
+                            <img src="./LP img/companies/airbnb.svg" alt="">
+                        </div>
+                        <div class="companies__icon">
+                            <img src="./LP img/companies/uber.svg" alt="">
+                        </div>
+                        <div class="companies__icon">
+                            <img src="./LP img/companies/paypal.svg" alt="">
+                        </div>
+                        <div class="companies__icon">
+                            <img src="./LP img/companies/visa.svg" alt="">
+                        </div>
+                        <div class="companies__icon">
+                            <img src="./LP img/companies/stripe.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="page__about-us about-us">
+                <div class="about-us__container _container">
+                    <div class="about-us__row">
+                        <div class="about-us__body">
+                            <div class="about-us__description">
+                                <div class="about-us__title">About Us</div>
+                                <div class="about-us__text">All of our furniture uses the best materials and choices for our customers. All of our furniture uses the best materials </div>
+                            </div>
+                            <div class="about-us__benefits">
+                                <ul class="about-us__list list">
+                                    <li class="list__item">
+                                        <div class="list__image">
+                                            <img src="../icon/surface1.svg" alt="">
+                                        </div>
+                                        <div class="list__body">
+                                            <h4 class="text-list">Best Quality</h4>
+                                            <p class="p-list">All of our furniture uses the best materials and choices</p>
+                                        </div>
+                                    </li>
+                                    <li class="list__item">
+                                        <div class="list__image">
+                                            <img src="../icon/guarantee 1.svg" alt="">
+                                        </div>
+                                        <div class="list__body">
+                                            <h4 class="text-list">Safe Shipping</h4>
+                                            <p class="p-list">All of our furniture uses the best materials and choices</p>
+                                        </div>
+                                    </li>
+                                    <li class="list__item">
+                                        <div class="list__image">
+                                            <img src="../icon/free-delivery 1.svg" alt="">
+                                        </div>
+                                        <div class="list__body">
+                                            <h4 class="text-list">Fast Shipping</h4>
+                                            <p class="p-list">All of our furniture uses the best materials and choices</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="about-us__image">
+                            <img src="./LP img/furniture/about3.jpg" alt="">
+                        </div>
+                        
+                    </div>
+                </div>
+            </section>
+            <section class="page__products products">
+                <div class="products__container _container">
+                    <div class="products__box">
+                        <div class="products__header">
+                            <div class="products__title">Our Popular Furniture</div>
+                            <div class="products__text">All of our furniture uses the best materials and choices for our <br> customers. All of our furniture uses the best materials and choices for our customers.</div>
+                        </div>
+                        <div class="products__body">
+                            <article class="products__item">
+                                <a href="" class="products__image ibg">
+                                    <img src="./LP img/furniture/1.jpg" alt="">
+                                </a>
+                                <div class="products__bottom">
+                                    <div class="products__first-row">
+                                        <a href="" class="products__link">
+                                            <div class="products__name">Brown Swan Chair</div>
+                                        </a>
+                                        <div class="products__icon">
+                                            <button class="icon__favourite-btn--active">
+                                                <img src="../icon/heartWhitesvg.svg" alt="">
+                                            </button>
+                                            <button class="icon__share-btn">
+                                                <img src="../icon/share 1.svg" alt="">
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="products__second-row">
+                                        <div class="products__price">40$</div>
+                                        <div class="products__button">
+                                            <a href="" class="buy-now__btn">Buy Now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="products__item">
+                                <a href="" class="products__image ibg">
+                                    <img src="./LP img/furniture/3.jpg" alt="">
+                                </a>
+                                <div class="products__bottom">
+                                    <div class="products__first-row">
+                                        <a href="" class="products__link">
+                                            <div class="products__name">White Swan Chair</div>
+                                        </a>
+                                        <div class="products__icon">
+                                            <button class="icon__favourite-btn">
+                                                <img src="../icon/heartBlack.svg" alt="">
+                                            </button>
+                                            <button class="icon__share-btn">
+                                                <img src="../icon/share 1.svg" alt="">
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="products__second-row">
+                                        <div class="products__price">30$</div>
+                                        <div class="products__button">
+                                            <a href="" class="buy-now__btn">Buy Now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="products__item">
+                                <a href="" class="products__image--position">
+                                    <img src="./LP img/furniture/2.jpg" alt="">
+                                </a>
+                                <div class="products__bottom">
+                                    <div class="products__first-row">
+                                        <a href="" class="products__link">
+                                            <div class="products__name">White Swan Chair</div>
+                                        </a>
+                                        <div class="products__icon">
+                                            <button class="icon__favourite-btn">
+                                                <img src="../icon/heartBlack.svg" alt="">
+                                            </button>
+                                            <button class="icon__share-btn">
+                                                <img src="../icon/share 1.svg" alt="">
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="products__second-row">
+                                        <div class="products__price">60$</div>
+                                        <div class="products__button">
+                                            <a href="" class="buy-now__btn">Buy Now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="products__item">
+                                <a href="" class="products__image--position">
+                                    <img src="./LP img/furniture/2.jpg" alt="">
+                                </a>
+                                <div class="products__bottom">
+                                    <div class="products__first-row">
+                                        <a href="" class="products__link">
+                                            <div class="products__name">White Swan Chair</div>
+                                        </a>
+                                        <div class="products__icon">
+                                            <button class="icon__favourite-btn">
+                                                <img src="../icon/heartBlack.svg" alt="">
+                                            </button>
+                                            <button class="icon__share-btn">
+                                                <img src="../icon/share 1.svg" alt="">
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="products__second-row">
+                                        <div class="products__price">60$</div>
+                                        <div class="products__button">
+                                            <a href="" class="buy-now__btn">Buy Now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="products__item">
+                                <a href="" class="products__image--position">
+                                    <img src="./LP img/furniture/2.jpg" alt="">
+                                </a>
+                                <div class="products__bottom">
+                                    <div class="products__first-row">
+                                        <a href="" class="products__link">
+                                            <div class="products__name">White Swan Chair</div>
+                                        </a>
+                                        <div class="products__icon">
+                                            <button class="icon__favourite-btn">
+                                                <img src="../icon/heartBlack.svg" alt="">
+                                            </button>
+                                            <button class="icon__share-btn">
+                                                <img src="../icon/share 1.svg" alt="">
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="products__second-row">
+                                        <div class="products__price">60$</div>
+                                        <div class="products__button">
+                                            <a href="" class="buy-now__btn">Buy Now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="products__item">
+                                <a href="" class="products__image--position">
+                                    <img src="./LP img/furniture/2.jpg" alt="">
+                                </a>
+                                <div class="products__bottom">
+                                    <div class="products__first-row">
+                                        <a href="" class="products__link">
+                                            <div class="products__name">White Swan Chair</div>
+                                        </a>
+                                        <div class="products__icon">
+                                            <button class="icon__favourite-btn">
+                                                <img src="../icon/heartBlack.svg" alt="">
+                                            </button>
+                                            <button class="icon__share-btn">
+                                                <img src="../icon/share 1.svg" alt="">
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="products__second-row">
+                                        <div class="products__price">60$</div>
+                                        <div class="products__button">
+                                            <a href="" class="buy-now__btn">Buy Now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="products__item">
+                                <a href="" class="products__image--position">
+                                    <img src="./LP img/furniture/2.jpg" alt="">
+                                </a>
+                                <div class="products__bottom">
+                                    <div class="products__first-row">
+                                        <a href="" class="products__link">
+                                            <div class="products__name">White Swan Chair</div>
+                                        </a>
+                                        <div class="products__icon">
+                                            <button class="icon__favourite-btn">
+                                                <img src="../icon/heartBlack.svg" alt="">
+                                            </button>
+                                            <button class="icon__share-btn">
+                                                <img src="../icon/share 1.svg" alt="">
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="products__second-row">
+                                        <div class="products__price">60$</div>
+                                        <div class="products__button">
+                                            <a href="" class="buy-now__btn">Buy Now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="products__item">
+                                <a href="" class="products__image--position">
+                                    <img src="./LP img/furniture/2.jpg" alt="">
+                                </a>
+                                <div class="products__bottom">
+                                    <div class="products__first-row">
+                                        <a href="" class="products__link">
+                                            <div class="products__name">White Swan Chair</div>
+                                        </a>
+                                        <div class="products__icon">
+                                            <button class="icon__favourite-btn">
+                                                <img src="../icon/heartBlack.svg" alt="">
+                                            </button>
+                                            <button class="icon__share-btn">
+                                                <img src="../icon/share 1.svg" alt="">
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="products__second-row">
+                                        <div class="products__price">60$</div>
+                                        <div class="products__button">
+                                            <a href="" class="buy-now__btn">Buy Now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="page__furniture furniture">
+                <div class="furniture__container _container">
+                    <div class="furniture__block">
+                        <div class="furniture__header">
+                            <div class="furniture__title">All Furniture</div>
+                            <nav class="furniture__navigation">
+                                <ul class="furniture__list">
+                                    <li class="furniture__list_active">Shop By Room</li>
+                                    <li>Shop By Category</li>
+                                    <li>Shop By Style</li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="furniture__row">
+                            <div class="furniture__images">
+                                <div class="furniture__image">
+                                    <img src="./LP img/furniture/6.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="furniture__category">
+                                <div class="furniture__column">
+                                    <div class="furniture__item item">
+                                        <div class="item__image">
+                                            <img src="../icon/sofa 1.svg" alt="">
+                                        </div>
+                                        <div class="item__text">Living Room</div>
+                                    </div>
+                                </div>
+                                <div class="furniture__column">
+                                    <div class="furniture__item item">
+                                        <div class="item__image">
+                                            <img src="../icon/kitchen.svg" alt="">
+                                        </div>
+                                        <div class="item__text">Kitchen</div>
+                                    </div>
+                                </div>
+                                <div class="furniture__column">
+                                    <div class="furniture__item item">
+                                        <div class="item__image">
+                                            <img src="../icon/restaurant.svg" alt="">
+                                        </div>
+                                        <div class="item__text">Dining Room</div>
+                                    </div>
+                                </div>
+                                <div class="furniture__column">
+                                    <div class="furniture__item item">
+                                        <div class="item__image">
+                                            <img class="image_white" src="../icon/office1.svg" alt="">
+                                        </div>
+                                        <div class="item__text">Office</div>
+                                    </div>
+                                </div>
+                                <div class="furniture__column">
+                                    <div class="furniture__item item">
+                                        <div class="item__image">
+                                            <img src="../icon/bedroom.svg" alt="">
+                                        </div>
+                                        <div class="item__text">Bed Room</div>
+                                    </div>
+                                </div>
+                                <div class="furniture__column">
+                                    <div class="furniture__item item">
+                                        <div class="item__image">
+                                            <img src="../icon/hallway.svg" alt="">
+                                        </div>
+                                        <div class="item__text">Hallway</div> 
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="page__review review">
+                <div class="review__container _container">
+                    <div class="review__row">
+                        <div class="review__box">
+                            <div class="review__image">
+                                <img src="./LP img/review/furniture.png" alt="">
+                            </div>
+                        </div>
+                        <div class="review__body">
+                            <div class="review__title">Our customers are very <br>importan to us</div>
+                            <div class="review__text">All of our furniture uses the best matials and choices for our customers. All of our furniture uses the best materials and choices for our customers.</div>
+                            <div class="review__person">
+                                <div class="person__row">
+                                    <div class="person__image">
+                                        <img src="./LP img/review/avatar.png" alt="">
+                                    </div>
+                                    <div class="person__body">
+                                        <div class="person__name">Mh Jibon</div>
+                                        <div class="person__rating">
+                                            <img src="../icon/star.svg" alt="">
+                                            <div class="rating">4.8</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="page__subscribe subscribe">
+                <div class="subscribe__container _container">
+                    <div class="subscribe__box">
+                        <div class="subscribe__header">
+                            <h4 class="subscribe__title">Subscribe to get the latest news about us</h4>
+                            <div class="subscribe__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incididunt ut labore at dolore.</div>
+                        </div>
+                        <div class="subscribe__body">
+                            <form action="#" method="post" class="subscribe-form">
+                                <img class="subscribe__image" src="../icon/envelope.svg" alt="">
+                                <input class="subscribe__input" placeholder="Enter your email" type="email">
+                            </form>
+                            <button class="subscribe__button" type="submit">Register</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+           <div class="footer__main _container">
+               <div class="footer__top">
+                    <div class="footer__column">
+                        <a href="" class="footer__logo">DudeShape</a>
+                        <div class="footer__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incididunt ut labore at dolore.</div>
+                        <div class="footer__social social">
+                            <div class="social__text">Follow Us :</div>
+                            <div class="social__items">
+                                <a href="" class="social__icon">
+                                    <img src="./LP img/footer/facebook.svg" alt="">
+                                </a>
+                                <a href="" class="social__icon">
+                                    <img src="./LP img/footer/twitter.svg" alt="">
+                                </a>
+                                <a href="" class="social__icon">
+                                    <img src="./LP img/footer/instagram.svg" alt="">
+                                </a>
+                                <a href="" class="social__icon">
+                                    <img src="./LP img/footer/youtube.svg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer__column">
+                        <div class="footer__label">Take a tour</div>
+                        <nav class="footer__menu menu-items">
+                            <ul class="menu-items__list">
+                                <li class="menu-items__item"><a href="" class="menu-items__link">Features</a></li>
+                                <li class="menu-items__item"><a href="" class="menu-items__link">Pricing</a></li>
+                                <li class="menu-items__item"><a href="" class="menu-items__link">Product</a></li>
+                                <li class="menu-items__item"><a href="" class="menu-items__link">Support</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="footer__column">
+                        <div class="footer__label">Our company</div>
+                        <nav class="footer__menu menu-items">
+                            <ul class="menu-items__list">
+                                <li class="menu-items__item"><a href="" class="menu-items__link">About</a></li>
+                                <li class="menu-items__item"><a href="" class="menu-items__link">Blog</a></li>
+                                <li class="menu-items__item"><a href="" class="menu-items__link">Media</a></li>
+                                <li class="menu-items__item"><a href="" class="menu-items__link">Contact Us</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="footer__column">
+                        <div class="footer__label">Subscribe</div>
+                        <div class="footer__text-subscribe">Subscribe to get the latest news from us</div>
+                        <form action="#" method="post" class="footer__form">
+                            <input type="email" placeholder="Email Address" required name="form[]" class="footer__input">
+                            <button class="footer__button" type="submit">
+                                <img src="./LP img/footer/arrow.svg" alt="arrow">
                             </button>
-                            <button class="icon__share-btn">
-                                <img src="../icon/share 1.svg" alt="">
-                            </button>
-                        </div>
+                        </form>
                     </div>
-                    <div class="products__second-row">
-                        <div class="products__price">40$</div>
-                        <div class="products__button">
-                            <button class="buy-now__btn" type="submit">Buy Now</button>
-                        </div>
-                    </div>
+               </div>
+           </div>
+            <div class="footer__bottom">
+                <div class="footer__container _container">
+                    <div class="footer__body">Copyright @ 2021. Crafted with love.</div>
                 </div>
             </div>
-            <div class="products__item">
-                <div class="products__image">
-                    <img src="./LP img/furniture/3.png" alt="">
-                </div>
-                <div class="products__bottom">
-                    <div class="products__first-row">
-                        <div class="products__name">White Swan Chair</div>
-                        <div class="products__icon">
-                            <button class="icon__favourite-btn">
-                                <img src="../icon/heartBlack.svg" alt="">
-                            </button>
-                            <button class="icon__share-btn">
-                                <img src="../icon/share 1.svg" alt="">
-                            </button>
-                        </div>
-                    </div>
-                    <div class="products__second-row">
-                        <div class="products__price">30$</div>
-                        <div class="products__button">
-                            <button class="buy-now__btn" type="submit">Buy Now</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="products__item">
-                <div class="products__image">
-                    <img src="./LP img/furniture/2.png" alt="">
-                </div>
-                <div class="products__bottom">
-                    <div class="products__first-row">
-                        <div class="products__name">White Swan Chair</div>
-                        <div class="products__icon">
-                            <button class="icon__favourite-btn">
-                                <img src="../icon/heartBlack.svg" alt="">
-                            </button>
-                            <button class="icon__share-btn">
-                                <img src="../icon/share 1.svg" alt="">
-                            </button>
-                        </div>
-                    </div>
-                    <div class="products__second-row">
-                        <div class="products__price">60$</div>
-                        <div class="products__button">
-                            <button class="buy-now__btn" type="submit">Buy Now</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        </footer>
     </div>
-   </section>
-   <section class="furniture container">
-    <div class="furniture__block">
-        <div class="furniture__header">
-            <div class="furniture__title">All Furniture</div>
-            <nav class="furniture__navigation">
-                <ul class="furniture__list">
-                    <li>Shop By Room</li>
-                    <li>Shop By Category</li>
-                    <li>Shop By Style</li>
-                </ul>
-            </nav>
-        </div>
-        <div class="furniture__row">
-            <div class="furniture__images">
-                <div class="furniture__image">
-                    <img src="./LP img/furniture/allFurniture.png" alt="">
-                </div>
-            </div>
-            <div class="futniture__category">
-                <div class="furniture__column">
-                    <div class="item__image">
-                        <img src="../icon/sofa 1.svg" alt="">
-                    </div>
-                    <div class="item__text">Living Room</div>
-                </div>
-                <div class="furniture__column">
-                    <div class="item__image">
-                        <img src="../icon/kitchen.svg" alt="">
-                    </div>
-                    <div class="item__text">Kitchen</div>
-                </div>
-                <div class="furniture__column">
-                    <div class="item__image">
-                        <img src="../icon/restaurant.svg" alt="">
-                    </div>
-                    <div class="item__text">Dining Room</div>
-                </div>
-                <div class="furniture__column">
-                    <div class="item__image">
-                        <img class="image_white" src="../icon/office1.svg" alt="">
-                    </div>
-                    <div class="item__text">Office</div>
-                </div>
-                <div class="furniture__column">
-                    <div class="item__image">
-                        <img src="../icon/bedroom.svg" alt="">
-                    </div>
-                    <div class="item__text">Bed Room</div>
-                </div>
-                <div class="furniture__column">
-                    <div class="item__image">
-                        <img src="../icon/hallway.svg" alt="">
-                    </div>
-                    <div class="item__text">Hallway</div> 
-                </div>
-            </div>
-        </div>
-    </div>
-   </section>
-   <section class="review container">
-    <div class="review__row">
-        <div class="review__box">
-            <div class="review__image">
-                <img src="./LP img/review/furniture.png" alt="">
-            </div>
-        </div>
-        <div class="review__body">
-            <div class="review__title">Our customers are very <br>importan to us</div>
-            <div class="review__text">All of our furniture uses the best matials and choices for our customers. All of our furniture uses the best materials and choices for our customers.</div>
-            <div class="review__person">
-                <div class="person__row">
-                    <div class="person__image">
-                        <img src="./LP img/review/avatar.png" alt="">
-                    </div>
-                    <div class="person__body">
-                        <div class="person__name">Mh Jibon</div>
-                        <div class="person__rating">
-                            <img src="../icon/star.svg" alt="">
-                            <div class="rating">4.8</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-   </section>
-   <section class="subscribe container">
-    <div class="subscribe__header">
-        <div class="subscribe__title">Subscribe to get the latest news about us</div>
-        <div class="subscribe__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incididunt ut labore at dolore.</div>
-    </div>
-    <div class="subscribe__body">
-        <div class="subscribe__row">
-            <img class="subscribe__image" src="../icon/envelope.svg" alt="">
-            <form action="#" method="post" enctype="multipart/form-data">
-                <input class="email" placeholder="Enter your email" type="text">
-            </form>
-        </div>
-        <div class="subscribe__button">
-            <button class="btn" type="submit">Register</button>
-        </div>
-    </div>
-   </section>
 </body>
 </html>

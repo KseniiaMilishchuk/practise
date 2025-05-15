@@ -1,5 +1,7 @@
 .companies {
-    padding: 140px 177px;
+    padding: 140px 0;
+}
+.companies__container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -9,10 +11,55 @@
 .companies__title {
     font-weight: 500;
     font-size: 32px;
+    line-height: 131%;
     color: #244D4D;
+    text-align: center;
 }
 
 .companies__icons {
-    display: flex;
+  
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
     gap: 100px;
+    padding: 0 57px;
+}
+.companies__icons img {
+    max-width: 100%;
+}
+.companies__icon {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+@media (max-width: 1130px) {
+    .companies {
+        padding: 80px 0;
+    }
+    .companies__icons {
+        grid-template: repeat(2, 1fr) / repeat(3, 1fr);
+        row-gap: 40px; 
+        padding: 0;
+    }
+}
+ @media (max-width: 650px) {
+    .companies__icons {
+        column-gap: 50px;
+    }
+} 
+@media (max-width: 530px) {
+    .companies__container {
+        gap: 20px;
+        align-items: normal;
+    }
+    .companies__icons {
+        grid-template: repeat(3, 1fr) / repeat(2, 1fr);
+        row-gap: 30px; 
+        column-gap: 40px;
+    }
+}
+@media (max-width: 450px) {
+    .companies {
+        padding: 50px 0;
+    }
 }
