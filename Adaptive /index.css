@@ -95,9 +95,7 @@ body {
     font-weight: 700;
     color: inherit;
 }
-.header__menu {
-    /* margin-left: 132px; */
-}
+
 
 @media (max-width: 992px) {
     .header__container {
@@ -125,13 +123,7 @@ body {
     column-gap: 21px;
 }
 
-.menu__item {
 
-}
-.menu__item:not(:last-child) {
-    /* margin-right: 21px; */
-  
-}
 .menu__link {
     color: #737373;
     font-weight: 600;
@@ -152,28 +144,13 @@ body {
 .page {
     flex: 1 1 auto;
 } 
-.page__main-block {
 
-}
 .page__services {
     position: relative;
     z-index: 2;
     margin-top: -111px;
 }
-.page__achievement {
-}
-.page__advice {
-}
-.page_whoweare {
-}
-.page__clients {
-}
-.page__subscribe {
-}
-.page__getintouch {
-}
-.page__contact-us {
-}
+
 /* ---HEADER------------------------------------------------------- */
 
 .header-block {
@@ -214,8 +191,6 @@ body {
 
 .main-block {
     position: relative;
-}
-.main-block__container {
 }
 
 .main-block__body {
@@ -329,13 +304,6 @@ body {
     }
 }
 /* ------SERVICES------------------------------------------------------------------------ */
-.services {
-}
-.services__container {
-}
-.services__body {
-    
-}
 .services__items {
     display: flex;
     column-gap: 30px;
@@ -359,9 +327,7 @@ body {
         row-gap: 30px;
     }
     }
-    .item-service { 
-    }
-
+    
 .item-service_green {
     background-color: #0D5C63;
 }
@@ -402,13 +368,7 @@ body {
     }
 }
 
-.achievement__header-block {
-}
 
-.achievement__body {
-
-    
-}
 .achievement__items {
     /* display: flex;
     column-gap: 30px;
@@ -474,13 +434,7 @@ body {
     gap: 45px;
     
 }
-.advice__header-block {
-     
-}
 
-.advice__body {
-    
-}
 .advice__items {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -568,13 +522,6 @@ body {
     gap: 80px;
 }
 
-.whoweare__header-block {
-}
-
-.whoweare__body {
-    
-
-}
 .whoweare__colums {
     display: flex;
     gap: 120px;
@@ -636,10 +583,6 @@ height / width of container * 100 = 442/1046*100=42,25% */
     display: flex;
     gap: 20px;
 }
-.item-content {
-}
-.item-content__icon {
-}
 .item-content__body {
     display: flex;
     flex-direction: column;
@@ -657,8 +600,7 @@ height / width of container * 100 = 442/1046*100=42,25% */
     color: #737373;
     line-height: 170%;
 }
-.content-block__item {
-}
+
 @media (max-width: 1080px) {
     .whoweare__colums {
         gap: 60px;
@@ -713,8 +655,6 @@ height / width of container * 100 = 442/1046*100=42,25% */
 .clients {
     padding: 60px 0;
 }
-.clients__container {
-}
 
 .clients__items {
     /* display: flex;
@@ -764,8 +704,7 @@ height / width of container * 100 = 442/1046*100=42,25% */
     bottom: 0;
     left: 0;
 }
-.subscribe__container {
-}
+
 .subscribe__body {
     padding: 30px 50px;
     background-color: #17213C;
@@ -865,12 +804,7 @@ height / width of container * 100 = 442/1046*100=42,25% */
     gap: 80px;
 }
 
-.getintouch__header-block {
-}
 
-.getintouch__body {
-}
-.getintouch__items {}
  
 .getintouch__item {
     background: #fff;
@@ -899,8 +833,8 @@ height / width of container * 100 = 442/1046*100=42,25% */
     border: #FF7B47;
     
 }
-.item-components__icon {
-}
+
+
 .item-components__emails {
     text-align: center;
    
@@ -976,9 +910,7 @@ height / width of container * 100 = 442/1046*100=42,25% */
     padding: 40px 0;
     background-color: #fff;
 }
-.contact-us__container {
 
-}
 
 .contact-us__body {
     display: flex;
@@ -1047,8 +979,7 @@ height / width of container * 100 = 442/1046*100=42,25% */
     background-color: #e3541c;
 }
 /* ====FOOTER=================================================================== */
-.footer {
-}
+
 .footer__top {
     background-color: #17213C;
     padding: 50px 0;
@@ -1098,19 +1029,13 @@ height / width of container * 100 = 442/1046*100=42,25% */
     letter-spacing: 0.1px;
     line-height: 150%;
 }
-.footer__menu {
-}
 
-.menu-footer {
-    
-}
 .menu-footer__list {
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
-.menu-footer__item {
-}
+
 .menu-footer__link {
     font-weight: 600;
     color: #fff;
@@ -1122,8 +1047,7 @@ height / width of container * 100 = 442/1046*100=42,25% */
 }
 
 
-.footer__content {
-}
+
 .content-footer {
     display: flex;
     flex-direction: column;
@@ -1136,8 +1060,7 @@ height / width of container * 100 = 442/1046*100=42,25% */
     align-items: center;
 }
 
-.content-footer__icon {
-}
+
 .content-footer__phone {
     font-weight: 600;
     color: #fff;
@@ -1169,8 +1092,7 @@ height / width of container * 100 = 442/1046*100=42,25% */
 .footer__bottom {
     padding: 25px 0;
 }
-.footer__container {
-}
+
 .footer__body {
     display: flex;
     flex-direction: column;
