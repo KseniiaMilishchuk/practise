@@ -48,7 +48,7 @@ body {
     overflow: hidden;
     /* display: flex;
     flex-direction: column; */
-    grid-template-rows: minmax(128px auto) 1fr minmax(1260px auto);
+    grid-template-rows: minmax(128px, auto) 1fr minmax(1260px, auto);
     grid-template-columns: 1fr;
     grid-template-areas: 
         "header" 
@@ -61,7 +61,29 @@ body {
     box-sizing: content-box;
     margin: 0 auto;
 }
-/* .page {}
-.page__main-block {}
-.page__intro {}
-.page__gallery {} */
+/* .page {} */
+/* .page__main-block {} */
+/* .page__intro {} */
+/* .page__gallery {}  */
+/* .page__review {} */
+/* .page__contact-us {} */
+
+.title-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-block__name {
+    position: relative;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 100%;
+    letter-spacing: -1.5px;
+    color: #000;
+}
+.title-block__icon {
+    position: absolute;
+    transform: translateY(150%);
+}
