@@ -1,0 +1,22 @@
+.footer {
+    grid-area: footer;
+    position: relative;
+    background: url(./image/bgFooter.png) 0 0 no-repeat;
+    height: 359px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.footer__icon {
+   position: absolute;
+   bottom: 32px;
+   left: 50%;
+   transform: translateX(-50%);
+}
+@media (max-width: 767px) {
+    .footer__icon img {
+        width: 82px;
+        height: 48px;
+    }
+}
