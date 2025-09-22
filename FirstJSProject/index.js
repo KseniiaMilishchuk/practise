@@ -6,7 +6,6 @@ const submitBtn = document.querySelector('#our-button');
 const todoList = document.querySelector('.todo-list');
 const clearBtn = document.querySelector('.clear-button');
 
-let todos = [];
 
 const todosLocalStorageController = {
     keyName: 'todos',
@@ -24,7 +23,12 @@ const todosLocalStorageController = {
         localStorage.setItem(this.keyName, JSON.stringify(this.prepareTodoToSave(todos)));
     }
 };
-
+/*  const x = obj.value; - виклик геттера;
+    const savedTodos = todosLocalStorageController.todos;
+  
+    obj.value = 123; - виклик сеттера;
+    todosLocalStorageController.todos = todos; (нові тудушки, відредаговані або видалені.)
+*/
 // створення li з кнопками
 function createToDo (todo, index) {
     const li = document.createElement('li');
@@ -65,7 +69,6 @@ function createToDo (todo, index) {
 }
 // Рендер тудушок у DOM
 function renderToDos (todos) { 
-
     todoList.innerHTML = '';
     const todosToRender = todos.map((todo, index) => createToDo(todo, index));
     todoList.append(...todosToRender);
@@ -94,52 +97,65 @@ async function init() {
     //todosLocalStorageController — об’єкт, який зберігає тудушки з localStorage
     const {todos: savedTodos } = todosLocalStorageController;
     
-    todos = [...fetchedTodos, ...savedTodos].slice(0, MAX_TODOS);
-    todosLocalStorageController.todos = todos;
+    let todos = [...fetchedTodos, ...savedTodos].slice(0, MAX_TODOS);
     
-    renderToDos(todos);
-    
-    // один делегований слухач на батьківському елементі <ul
+// кастомний івент для оновлення списку
+    const updateTodosEvent = new CustomEvent('updateTodoList');
+
+    document.addEventListener('updateTodoList', () => {
+        todosLocalStorageController.todos = todos;
+        renderToDos(todos);
+    });
+
+    document.dispatchEvent(updateTodosEvent);
+
+// функція видалення тудушки
+    function deleteTodo(index) {
+        todos = todos.filter((_, i) => i !== index);
+        document.dispatchEvent(updateTodosEvent);
+    }
+
+// функція редагування тудушки
+    function editTodo(index) {
+        const newText = prompt('Enter edit text', todos[index]);
+        if(newText && newText.trim() !== '') {
+            todos[index] = newText.trim();
+            document.dispatchEvent(updateTodosEvent);
+        }
+    }
+// один делегований слухач на батьківському елементі <ul
     todoList.addEventListener('click', (event) => {
-    
         const deleteBtn = event.target.closest('.delete-btn');
         if (deleteBtn) {
             const index = Number(deleteBtn.dataset.index); //data-index = '23' => 23
-            todos.splice(index, 1);
-            todosLocalStorageController.todos = todos;
-            renderToDos(todos);
+            deleteTodo(index);
             return; // щоб не йшов далі
         }
     
         const editBtn = event.target.closest('.edit-btn');
         if (editBtn) {
             const index = Number(editBtn.dataset.index);
-            const newText = prompt('Enter edit text', todos[index]);
-            if (newText && newText.trim() !== '') {
-                todos[index] = newText.trim();
-                todosLocalStorageController.todos = todos;
-                renderToDos(todos);
-            }
+            editTodo(index);
         }
     });
 
-    // Очистка всього списку через кнопку Clear Items
+// Очистка всього списку через кнопку Clear Items
     clearBtn.addEventListener('click', () => {
-        todos.length = 0;
-        todosLocalStorageController.todos = todos;
-        todoList.innerHTML = '';
+        todos = [];
+        document.dispatchEvent(updateTodosEvent);
+        
     });
        
-    
+// додавання нового туду
     submitBtn.addEventListener('click', () => {
         const newToDo = input.value.trim();
-        if (newToDo === '') return;
+        if (!newToDo) return;
+        if (todos.includes(newToDo)) return;
     /* unshift додає новий туду на початок списку (push – в кінець масиву) */
         todos.unshift(newToDo);
         input.value = '';
         console.log('ToDo list: ', todos);
-        todosLocalStorageController.todos = todos; //// зберігаємо зміни
-        renderToDos(todos);
+        document.dispatchEvent(updateTodosEvent);
     });
 }
 init();
